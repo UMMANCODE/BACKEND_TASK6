@@ -25,9 +25,11 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-3 ">
+                            @*
                             <a href="index.html" class="site-brand">
-                                <img src="~/image/@settings["HeaderLogo"]" alt="">
+                                <img src='~/image/@(settings["HeaderLogo"])' alt="">
                             </a>
+                            *@
                         </div>
                         <div class="col-lg-3">
                             <div class="header-phone ">
@@ -36,7 +38,9 @@
                                 </div>
                                 <div class="text">
                                     <p>Free Support 24/7</p>
+                                    @*
                                     <p class="font-weight-bold number">@settings["SupportPhone"]</p>
+                                    *@
                                 </div>
                             </div>
                         </div>
@@ -743,9 +747,10 @@
                 </div>
             </div>
         </div>
-        @RenderBody()
+    </div>
+    @RenderBody()
 
-        <!--=================================
+    <!--=================================
     Brands Slider
     ===================================== -->
         <section class="section-margin">
@@ -797,17 +802,23 @@
                 <div class="row justify-content-between  section-padding">
                     <div class=" col-xl-3 col-lg-4 col-sm-6">
                         <div class="single-footer pb--40">
+                            @*
                             <div class="brand-footer footer-title">
-                                <img src="~/image/@settings["FooterLogo"]" alt="">
+                                <img src='~/image/@settings["FooterLogo"]' alt="">
                             </div>
+                        *@
                             <div class="footer-contact">
                                 <p>
+                                    @*
                                     <span class="label">Address:</span><span class="text">
                                         @settings["Address"]
                                     </span>
+                                    *@
                                 </p>
+                                @*
                                 <p><span class="label">Phone:</span><span class="text">@settings["Phone"]</span></p>
                                 <p><span class="label">Email:</span><span class="text">@settings["Email"]</span></p>
+                                *@
                             </div>
                         </div>
                     </div>
